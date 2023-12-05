@@ -1,5 +1,5 @@
 # Google login clone
-> ## [Google 2.0](https://nayanjithh.github.io/Google-Login/Google%202.0/Google.html)
+> ## [Google 2.0](https://nayanjithh.github.io/Google/Google%202.0/Google.html)
  * Simple front-end of a google login page
 
 > ## [Google 2.1](https://nayanjithh.github.io/Google-Login/Google%202.1/Login/Google.html)
