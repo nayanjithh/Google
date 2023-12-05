@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google login clone</title>
+        <link rel="icon" href="icon.png">
+        <link href="Google.css" rel="stylesheet">
+        <link rel="images" rel="img">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/83db7ea483.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <img src="google logo.jpg">
+                <p style="margin-top: 2px;">
+                    Sign in with your Google Account
+                </p>
+                <img class="userlogo" src="user icon.png">
+                <div>
+                    <input class="username" type="text" placeholder="Username">
+                </div>
+                <div>
+                    <input class="password" type="password" placeholder="Password">
+                </div>
+                <div class="show">
+                    <input type="checkbox" id="show" onclick="show()">
+                    <label for="show">Show password</label>
+                </div>
+                <div>
+                    <button onclick=" check()">Sign In</button>
+                </div>
+                <div class="help">
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Stay signed in</label>
+                    </div>
+                    <div style="text-align: right;">
+                        <a  class="create" href="../Create/create.html">Create new</a>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="Google.js"></script>
+</html>

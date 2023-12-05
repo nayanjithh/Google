@@ -1,0 +1,99 @@
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    border: 2px solid lightgrey;
+    text-align: center;
+    padding: 0px 30px 30px 30px;
+}
+.form img{
+    width: 90px;
+}
+.userlogo{
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+input[type=email],input[type=password]{
+    color: #b5aeaa;
+    font-family: Roboto;
+    border: 1px solid #b5aeaaa8;
+    display: block;
+    padding:10px ;
+    width: 90%;
+    margin-top: -1px;
+    outline: none;
+}
+input[type=email]:focus,input[type=password]:focus{
+    border: 1px solid #5295f5;
+    color: black;
+}
+button{
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    border: none;
+    border-radius: 2px;
+    background-color: #5295f5;
+    color: white;
+    display: block;
+    text-align:center;
+    display: inline-block;
+    font-weight: bold;
+}
+button:hover{
+    opacity: 0.8;
+}
+p{
+    font-family: Roboto; 
+    color: #6c6c6d;
+}
+.checkbox{
+    flex: 1;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 600;
+}
+.help{
+    flex: 1;
+    text-align: right;
+    color: #4c88eb;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 600;
+}
+.checkbox input{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox label{
+    display: inline-flex;
+    cursor: pointer;
+}
+.checkbox label::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border:1px solid #c5c5c7;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-top: 1px;
+}
+.checkbox input:checked +label::before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: '\002714';
+    color: #6c6c6d;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border:1px solid #c5c5c7;
+    cursor: pointer;
+    margin-right: 2px;
+    margin-top: 1px;
+}
