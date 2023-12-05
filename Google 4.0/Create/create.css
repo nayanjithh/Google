@@ -212,4 +212,7 @@ button:hover{
     .login{
         font-size: 30px;
     }
+    .error{
+        font-size: xx-large;
+    }
 }
