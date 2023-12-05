@@ -45,26 +45,28 @@ button.addEventListener('click', () =>{
         eborder.style.borderColor="rgb(216, 47, 36, 1)";
         pborder.style.borderColor="rgb(216, 47, 36, 1)";
         error.innerHTML = "Invalid feilds"
-        email1.value='';
-        password2.value='';
+        email1.value = '';
+        password2.value = '';
     }
     else{
-        console.log('checking..')
+        console.log('checking..');
+        let found = false;
         querySnapshot.forEach((doc) => {
             const data = doc.data();
             
             if (doc.id == email && data.password == password) {
-            window.location.href = "../Homepage/Homepage.html";
-            console.log("WELCOME");
-            }
-            else{
-                console.log("INVALID");
-                eborder.style.borderColor="rgb(216, 47, 36, 1)";
-                pborder.style.borderColor="rgb(216, 47, 36, 1)";
-                error.innerHTML = "Invalid feilds"
-                email1.value='';
-                password2.value='';
+                window.location.href = "../Homepage/Homepage.html";
+                console.log("WELCOME");
+                found = true;
             }
         });
+         if(!found){
+            console.log("INVALID");
+            eborder.style.borderColor="rgb(216, 47, 36, 1)";
+            pborder.style.borderColor="rgb(216, 47, 36, 1)";
+            error.innerHTML = "Invalid feilds"
+            email1.value='';
+            password2.value='';
+        }
     }
 });
